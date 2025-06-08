@@ -969,7 +969,7 @@ footer#contact-info {
     min-width: 60px;
     max-width: 140px;
     transition: background 0.15s, color 0.15s, box-shadow 0.15s, opacity 0.15s;
-    pointer-events: none;
+    pointer-events: auto;
 }
 .project-button-link-disabled:hover {
     background: #23272a;
