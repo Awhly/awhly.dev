@@ -6,35 +6,14 @@ window.addEventListener('load', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const contactBtn = document.getElementById('contactBtn');
-    const resumeBtn = document.getElementById('resumeBtn');
 
-    // --- Contact Me Button ---
-    if (contactBtn) {
-        contactBtn.addEventListener('click', () => {
-            // Replace with your actual contact link or functionality
-            alert('Contact Me button clicked! You can add a mailto link or a contact form.');
-            // Example: window.location.href = 'mailto:your.email@example.com';
-        });
-    }
-
-    // --- Resume Button ---
-    if (resumeBtn) {
-        resumeBtn.addEventListener('click', () => {
-            // Replace with the actual path to your resume PDF or a resume page
-            alert('Resume button clicked! Link this to your resume.');
-            // Example: window.open('path/to/your/resume.pdf', '_blank');
-        });
-    }
-
-    // Helper function to escape HTML to prevent XSS
     function escapeHTML(str) {
         const div = document.createElement('div');
         div.appendChild(document.createTextNode(str));
         return div.innerHTML;
     }
 
-    // --- Hearts Animation & Overheat/Break on Short Link Click ---
+    // --- Hearts Animation & Overheat/Break on Short Link ---
     let heartClickCount = 0;
     let overheated = false;
     let broken = false;
@@ -44,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         shortLink.addEventListener('click', (e) => {
             if (broken) return;
             heartClickCount++;
-            // Emit hearts
+            // hearts
             for (let i = 0; i < 6; i++) {
                 const heart = document.createElement('span');
                 heart.textContent = '❤️';
@@ -81,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // --- Show message after long hover on short-link ---
+        // --- hover message ---
         let hoverTimeout20 = null;
         let hoverTimeout40 = null;
         let hoverTimeout80 = null;
@@ -134,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
             span.textContent = c;
             span.className = 'short-link-explode';
             el.appendChild(span);
-            // Animate each char outward
             const angle = (Math.PI * 2 * i) / chars.length + Math.random() * 0.5;
             const distance = 60 + Math.random() * 40;
             const x = Math.cos(angle) * distance;
@@ -151,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Badge Dev Hover Message with Animated Dots ---
+    // --- dev badge hover message ---
     const badgeDev = document.querySelector('.badge-dev');
     let badgeDevMsgTimeout = null;
     if (badgeDev) {
@@ -179,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { selector: '12projects', text: 'My projects', target: 'projects' },
         { selector: '23resume', text: 'My resume', target: 'nothing' },
         { selector: '34contact', text: 'My contacts', target: 'contactme' },
-    //{ selector: '45accounts', text: 'My accounts', target: 'contactme.html#accounts' }
+    //{ selector: '45accounts', text: 'My accounts', target: 'contactme#accounts' }
     ];
     tooltipMap.forEach(({ selector, text, target }) => {
         const btns = document.getElementsByClassName(selector);
@@ -215,7 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     tooltipDiv = null;
                 }
             });
-            // Add click navigation without href
             if (target) {
                 btn.addEventListener('click', function () {
                     window.location.href = target;
