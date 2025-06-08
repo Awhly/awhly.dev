@@ -12,7 +12,6 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 - **Posts Section:** Horizontally scrolling posts grid using flexbox.
 - **Project Cards:** Projects page with interactive cards, status badges, dates, and action buttons.
 - **Contact Wall:** Contact page with a grid of cards, FontAwesome icons, and playful effects.
-- **Resume Page:** Embedded PDF viewer and download button, styled to match the site.
 - **Error/Maintenance Page:** Friendly, on-brand error/maintenance page (`nothing.html`).
 - **Playful UI Effects:** Animated arrows, scroll-to-top button, music player, and more.
 - **Custom Font:** Uses Ginto Nord font throughout for a unique, modern look.
