@@ -28,8 +28,6 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 - `resume.html` – Resume viewer and download
 - `nothing.html` – Error/maintenance page
 - `style.css` – Main styles (index, resume, nothing)
-- `style-contactme.css` – Contact page styles
-- `style-projects.css` – Projects page styles
 - `script.js` – All interactivity, navigation, and playful effects
 - `banners/`, `avatar/`, `emojies/` – Asset folders for images, video, and icons
 
@@ -60,7 +58,6 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 ## Customization
 
 - **Add your own posts, projects, or contact methods** by editing the respective HTML files.
-- **Update the resume** by replacing `Resume-compressed.pdf`.
 - **Change the background video** by replacing `banners/banner.webm`.
 - **Add new badges, emojis, or avatars** in the `emojies/` and `avatar/` folders.
 
@@ -77,7 +74,7 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 
 ## License
 
-MIT License
+GPL 3.0
 
 ---
 
