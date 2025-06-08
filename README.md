@@ -87,4 +87,4 @@ GPL 3.0
 
 ## Contact
 
-See the [Contact Me](contactme.html) page for ways to reach out!
+See the [Contact Me](https://awhly.dev/contactme) page for ways to reach out!
