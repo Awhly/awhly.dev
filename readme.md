@@ -28,8 +28,6 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 - `resume.html` – Resume viewer and download
 - `nothing.html` – Error/maintenance page
 - `style.css` – Main styles (index, resume, nothing)
-- `style-contactme.css` – Contact page styles
-- `style-projects.css` – Projects page styles
 - `script.js` – All interactivity, navigation, and playful effects
 - `banners/`, `avatar/`, `emojies/` – Asset folders for images, video, and icons
 
@@ -38,7 +36,6 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 ## Notable UI/UX Details
 
 - **Navigation:** Top-bar links work across all pages; asset paths are robust for hosting.
-- **Font:** Ginto Nord loaded via `@font-face` in CSS and set as default.
 - **Posts:** Displayed left-to-right (horizontal scroll) using flexbox.
 - **Project Cards:** Include status badges, project dates, and interactive (or disabled) buttons.
 - **Contact Cards:** Grid layout with FontAwesome icons and playful hover effects.
@@ -60,7 +57,6 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 ## Customization
 
 - **Add your own posts, projects, or contact methods** by editing the respective HTML files.
-- **Update the resume** by replacing `Resume-compressed.pdf`.
 - **Change the background video** by replacing `banners/banner.webm`.
 - **Add new badges, emojis, or avatars** in the `emojies/` and `avatar/` folders.
 
@@ -77,7 +73,7 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 
 ## License
 
-MIT License
+GPL 3.0
 
 ---
 
@@ -90,4 +86,4 @@ MIT License
 
 ## Contact
 
-See the [Contact Me](contactme.html) page for ways to reach out!
+See the [Contact Me](https://awhly.dev/contactme) page for ways to reach out!
