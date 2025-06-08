@@ -12,7 +12,6 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 - **Posts Section:** Horizontally scrolling posts grid using flexbox.
 - **Project Cards:** Projects page with interactive cards, status badges, dates, and action buttons.
 - **Contact Wall:** Contact page with a grid of cards, FontAwesome icons, and playful effects.
-- **Resume Page:** Embedded PDF viewer and download button, styled to match the site.
 - **Error/Maintenance Page:** Friendly, on-brand error/maintenance page (`nothing.html`).
 - **Playful UI Effects:** Animated arrows, scroll-to-top button, music player, and more.
 - **Custom Font:** Uses Ginto Nord font throughout for a unique, modern look.
@@ -25,7 +24,6 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 - `index.html` – Main site (profile, posts, badges, music player, etc.)
 - `projects.html` – Projects grid with cards, badges, and interactive buttons
 - `contactme.html` – Contact wall with cards and icons
-- `resume.html` – Resume viewer and download
 - `nothing.html` – Error/maintenance page
 - `style.css` – Main styles (index, resume, nothing)
 - `script.js` – All interactivity, navigation, and playful effects
@@ -36,10 +34,10 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 ## Notable UI/UX Details
 
 - **Navigation:** Top-bar links work across all pages; asset paths are robust for hosting.
+- **Font:** Ginto Nord loaded via `@font-face` in CSS and set as default.
 - **Posts:** Displayed left-to-right (horizontal scroll) using flexbox.
 - **Project Cards:** Include status badges, project dates, and interactive (or disabled) buttons.
 - **Contact Cards:** Grid layout with FontAwesome icons and playful hover effects.
-- **Resume:** Embedded PDF with download button, styled to match the site.
 - **Error Page:** `nothing.html` provides a friendly, styled fallback for errors/maintenance.
 - **Playful Effects:** Animated arrows, music player, scroll-to-top button, and more.
 
@@ -64,7 +62,6 @@ A modern, personal website inspired by Instagram and Discord, featuring a consis
 
 ## Credits
 
-- **Font:** Ginto Nord (included in repo)
 - **Icons:** FontAwesome (loaded via CDN)
 - **Design inspiration:** Instagram, Discord
 - **All code and assets** © Awhly
